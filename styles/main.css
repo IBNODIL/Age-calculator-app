@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 86%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 600px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+  border-radius: 20px;
+  border-bottom-right-radius: 150px;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+}
+
+.form div{
+  margin-right: 10px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form span{
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.form input{
+  border: 2px solid hsl(0, 0%, 94%);
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  outline-color: hsl(259, 100%, 65%);
+}
+
+.arrow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr{
+  width: 100%;
+}
+
+#continue{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(259, 100%, 65%);
+  transition: all 0.3s;
+}
+
+#continue:hover{
+  background-color: hsl(0, 0%, 8%);
+}
+
+#continue img{
+  width: 35px;
+}
+
+.headings{
+  display: flex;
+  align-items: center;
+  font-size: 62px;
+  font-weight: 900;
+}
+
+.headings span{
+  color: hsl(259, 100%, 65%);
+}
+
+.mobile-hr{
+  visibility: hidden;
+  display: none;
+}
+
+@media only screen and (max-width: 650px){
+  .container{
+    width: 300px;
+    padding: 30px 20px;
+    border-bottom-right-radius: 95px;
+  }
+
+  .form{
+    margin-bottom: 20px;
+  }
+
+  .form div{
+    width: 80px;
+  }
+
+  .form input{
+    font-size: 15px;
+  }
+
+  .arrow{
+    position: relative;
+    margin-top: 10px;
+    height: 60px;
+  }
+
+  #continue{
+    width: 50px;
+    padding: 10px;
+    height: 50px;
+  }
+
+  .mobile-hr{
+    display: flex;
+    visibility: visible;
+  }
+
+  .headings{
+    font-size: 40px;
+  }
+}
